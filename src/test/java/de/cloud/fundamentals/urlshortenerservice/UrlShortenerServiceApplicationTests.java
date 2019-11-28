@@ -1,4 +1,4 @@
-package de.cloud.fundamentals.UrlShortenerService;
+package de.cloud.fundamentals.urlshortenerservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

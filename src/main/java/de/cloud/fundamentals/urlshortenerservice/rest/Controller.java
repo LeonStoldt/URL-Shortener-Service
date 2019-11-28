@@ -1,8 +1,6 @@
-package de.cloud.fundamentals.UrlShortenerService.rest;
+package de.cloud.fundamentals.urlshortenerservice.rest;
 
-import de.cloud.fundamentals.UrlShortenerService.GooLnkConnector;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import de.cloud.fundamentals.urlshortenerservice.GooLnkConnector;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -35,6 +33,6 @@ public class Controller {
     public ResponseEntity<String> receiveRequest(@RequestBody String message) {
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(gooLnkConnector.getShortenedUrl(message));
+                .body(gooLnkConnector.getShortenedUrl(message.trim()));
     }
 }

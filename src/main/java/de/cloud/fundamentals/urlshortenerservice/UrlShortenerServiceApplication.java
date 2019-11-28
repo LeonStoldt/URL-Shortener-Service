@@ -1,4 +1,4 @@
-package de.cloud.fundamentals.UrlShortenerService;
+package de.cloud.fundamentals.urlshortenerservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

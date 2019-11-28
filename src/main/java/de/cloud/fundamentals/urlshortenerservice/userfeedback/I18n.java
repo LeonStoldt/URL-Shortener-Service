@@ -1,4 +1,4 @@
-package de.cloud.fundamentals.UrlShortenerService.userfeedback;
+package de.cloud.fundamentals.urlshortenerservice.userfeedback;
 
 import java.text.MessageFormat;
 import java.util.MissingResourceException;
