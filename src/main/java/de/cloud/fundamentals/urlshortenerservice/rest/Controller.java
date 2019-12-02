@@ -29,7 +29,7 @@ public class Controller {
         return "UrlShortener is active.";
     }
 
-    @PostMapping("/api")
+    @PostMapping(value = "/api", produces = JSON, consumes = JSON)
     public ResponseEntity<String> receiveRequest(@RequestBody String message) {
         return ResponseEntity
                 .status(HttpStatus.OK)
