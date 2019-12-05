@@ -24,7 +24,7 @@ public class Controller {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping(value = "/", produces = JSON)
+    @GetMapping(value = "/")
     public String getStatus() {
         return "UrlShortener is active.";
     }
