@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: urlshortener
+  name: urlshortener
+spec:
+  replicas: 2
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: urlshortener
+    spec:
+      containers:
+      - image: cloud-fundamentals_urlshortener
+        name: urlshortener
+        resources: {}
+      restartPolicy: Always
+status: {}
